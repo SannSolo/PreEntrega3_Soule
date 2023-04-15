@@ -10,7 +10,7 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Tilt Neon', cursive; */
 .navbar {
   position: fixed;
-  background-color: #F2F2F2;
+  background-color: #101C26;
   border-radius: 16px;
   font-weight: bold;
 }
@@ -186,4 +186,41 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 25px;
+}
+
+.formulario {
+  padding: 150px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+}
+.formulario legend {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 55px;
+}
+.formulario label {
+  text-align: left;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+.formulario input {
+  border-radius: 10px;
+  border-color: #F2C894;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+  padding: 5px;
+}
+.formulario button {
+  border-radius: 3px;
+  border-color: #F2C894;
+  width: 90px;
+  color: #101C26;
+  background-color: #F2EC94;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

@@ -32,7 +32,7 @@ $sz-lg: 55px;
 
 .navbar{
     position: fixed;
-    background-color: #F2F2F2;
+    background-color: $negro;
     border-radius: 16px;
     font-weight: bold;
     
@@ -228,3 +228,46 @@ h2{
         text-transform: uppercase;
         padding-top: 25px;
 }
+
+//  CODE CONTACTO  // 
+
+.formulario {
+    padding: 150px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+
+        legend{
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: $sz-lg;
+        }
+        label{
+            text-align: left;
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: $sz-md;
+        }
+        input{
+            border-radius: 10px;
+            border-color: #F2C894;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: normal;
+            padding: 5px;
+            
+        }
+        button{
+            border-radius: 3px;
+            border-color: #F2C894;
+            width: 90px;
+            color: $negro;
+            background-color: $amarillo;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+}
+
