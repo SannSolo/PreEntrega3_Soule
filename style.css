@@ -170,4 +170,20 @@ h2 {
   padding: 65px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.tema1 {
+  padding: 45px;
+  padding-top: 95px;
+}
+
+.tema2 {
+  padding: 45px;
+}
+
+.descripcion {
+  text-align: center;
+  color: #101C26;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 25px;
+}/*# sourceMappingURL=style.css.map */
