@@ -143,4 +143,31 @@ h2:hover {
 a {
   display: flex;
   justify-content: end;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.videoYT {
+  display: grid;
+  place-items: center;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+h2 {
+  text-align: center;
+  color: #101C26;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 55px;
+  text-shadow: #F2F2F2 2px 4px;
+  padding-bottom: 45px;
+}
+
+.textAbout {
+  text-align: center;
+  color: #101C26;
+  font-size: 30px;
+  font-weight: unset;
+  text-transform: uppercase;
+  padding: 65px;
+}
+
+/*# sourceMappingURL=style.css.map */

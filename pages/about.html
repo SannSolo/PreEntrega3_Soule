@@ -5,37 +5,49 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="/style.css">
         <link rel="shorcut icon" href="../assets/img/favicon-32x32.png" type="image/x-icon">
         <title>San Producciones</title>
 </head>
 <header id="top">
-        <nav>
-                <ul id="navBar">
-                        <li>
-                                <a href="./about.html">Sobre Mi</a>
-                        </li>
-                        <li>
-                                <a href="./bestjobs.html">Mis Trabajos</a>
-                        </li>
-                        <li>
-                                <a href="./contact.html">Contacto</a>
-                        </li>
-                        <li>
-                                <a href="./FAQ.html">Preguntas frecuentes</a>
-                        </li>
+       
+        <nav class="navbar navbar-expand-sm bg-ligth navbar-ligth">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="/index.html" >
+                  <img src="../assets/img/Logo_cabecera_sl_sl.jpeg" class="LogoNav" alt="logo" >
+                </a>
+                
+                <!-- Links -->
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/about.html">SOBRE MI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/bestjobs.html">TRABAJOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/contact.html">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/FAQ.html">FAQ</a>
+                  </li>
                 </ul>
-        </nav>
+              </nav>
 </header>
 
 <body>
-        <main>
-                <div>
-                        <img src="../assets/img/Logo cabecera sl.jpeg" id="logoCabecera" alt="">
-                </div>
-                <div>
-                        <h2 id="SobreMi">Sobre Mi</h2>
-                        <p>
+        <div class="videoYT">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ibV3ltCNgI8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen id="vidYt"></iframe>
+
+        </div>
+               
+        <div calss="aboutMe">
+                <h2>SOBRE MI</h2>
+                        <p class="textAbout">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam sunt nemo enim
                                 possimus corrupti corporis, ullam animi ratione nostrum obcaecati eum ut in eos
                                 reiciendis delectus facere vel voluptatum consectetur earum deleniti, fugiat unde,
@@ -52,10 +64,11 @@
                                 nobis soluta rerum excepturi.
                         </p>
                 </div>
-                <div>
-                        <img src="../assets/img/conmaschine.jpg" alt="" id="maschine">
-                </div>
-                <div>
+        
+        <div>
+                <img src="../assets/img/conmaschine.jpg" alt="" id="maschine">
+        </div>
+                <!-- <div calss="aboutMe">
                         <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos minima dignissimos,
                                 distinctio nulla neque et id quibusdam maiores facilis incidunt quos eligendi dolores
@@ -69,22 +82,19 @@
 
 
                         </p>
-                </div>
-                <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ibV3ltCNgI8"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen id="vidYt"></iframe>
-
-                </div>
+                </div> -->
+                
         </main>
 </body>
 
-<footer>
-        <a href="../index.html">Ir al inicio</a>
+<footer >
+        <div class="foot">
         <a href="https://www.instagram.com/santiago.soule/">
-                <img class="Instagram" src="../assets/img/LogoInsta.jpeg" alt="Visita mi instagram">
+            <img class="Instagram" src="../assets/img/LogoInsta.jpeg" alt="Visita mi instagram">
         </a>
-</footer>
+        <p>Pagina diseñada por Santiago Soulé - 2023 -</p>
+
+        </div>
+    </footer>
 
 </html>
