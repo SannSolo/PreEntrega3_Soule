@@ -30,19 +30,24 @@ $sz-lg: 55px;
 // body{
     // background-image: linear-gradient(to top, #f6f2bb, #fbf0c1, #feefc8, #ffeecf, #ffedd6);
 
-.fotos{
-    display: grid;
-    grid-template-columns: 100%;
-    place-items: center;
-    margin: 10px;
-
-   
+.navbar{
+    position: fixed;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+    font-weight: bold;
+    
 }
     
 .LogoNav{
     width: 120px;
     border-radius: 8px;
     border-radius: 25px;
+}
+
+.ultimo{
+    display: grid;
+    place-items: center;
+    padding: 85px;
 }
 
 .imgUp {
@@ -148,13 +153,6 @@ h2:hover{
 }
 h2:hover{
     text-shadow: #A7F2EB 2px 1px ;
-}
-      
-
-.ultimo{
-    display: grid;
-    place-items: center;
-    padding: 65px;
 }
 
 .foot{
