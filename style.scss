@@ -271,3 +271,27 @@ h2{
 
 }
 
+//  FAQ CODE // 
+
+.pregunta{
+            text-align: left;
+            color: #101C26;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: $sz-lg;
+            text-shadow: $crudo 2px 4px ;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+            padding-top: 95px;
+            padding-left: 45px;
+            font-size: $sz-md;
+}
+
+.rta{
+    text-align: left;
+    color: #101C26; 
+    font-size: $sz-sm;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-left: 25px;
+    
+}
