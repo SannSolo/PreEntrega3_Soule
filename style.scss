@@ -1,297 +1,168 @@
 * {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&family=Tilt+Neon&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
-
-
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Tilt Neon', cursive; */
 
 // PALETA DE COLORES // 
 $negro: #101C26;
 $celeste: #A7F2EB;
 $amarillo: #F2EC94;
-$naranja:#F2C894;
+$naranja: #F2C894;
 $crudo: #F2F2F2;
 
 // SIZES TEXTOS //
-
 $sz-sm: 20px;
 $sz-md: 30px;
 $sz-lg: 55px;
 
+// PUNTOS DE QUIEBRE //
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
 
-// body{
-    // background-image: linear-gradient(to top, #f6f2bb, #fbf0c1, #feefc8, #ffeecf, #ffedd6);
-
-.navbar{
-    position: fixed;
-    background-color: $negro;
-    border-radius: 16px;
-    font-weight: bold;
-    
-}
-    
-.LogoNav{
-    width: 120px;
-    border-radius: 8px;
-    border-radius: 25px;
-}
-
-.ultimo{
-    display: grid;
-    place-items: center;
-    padding: 85px;
-}
-
-
-.imgUp {
-    display: grid;
-    place-items: center;
-    margin-top: 15px;
-    
-    
-}
-.imgUp:hover{
-        filter:blur(1px) 
+// MEDIA QUERIES //
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: #{$mobile}) {
+      @content;
     }
+  } @else if $breakpoint == tablet {
+    @media (max-width: #{$tablet}) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (max-width: #{$desktop}) {
+      @content;
+    }
+  }
+}
+
+// IMAGENES RESPONSIVAS //
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//INDEX CODE // 
+.navbar {
+  border-radius: 8px;
+  border: 5px solid #A7F2EB;
+  font-weight: bold;
+
+  @include respond-to(mobile) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.LogoNav {
+  width: 120px;
+  border-radius: 25px;
+}
+
+.ultimo {
+  display: grid;
+  place-items: center;
+  padding: 85px;
+}
 
 .logoGrande {
-    height: 250 px;  
-
+  height: 250px;
 }
-.textInicio{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 45px;
-    margin: 50px;
+
+.textInicio {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 45px;
+  margin: 50px;
+  text-transform: lowercase;
+
+  @include respond-to(mobile) {
+    grid-template-columns: 1fr;
     
-
-    // grid-template-rows: 40% 40%;
-}
-.What{
-    display: grid;
-    padding: 25px;
-    border:20px;
-
-        h2{
-            text-align: center;
-            color: #101C26;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: $sz-lg;
-            text-shadow: $crudo 2px 4px ;
-        }
-        p{
-            text-align: center;
-            color: #101C26; 
-            font-size: $sz-md;
-            font-weight: bold;
-            text-transform: uppercase;
-            
-        }  
-}
-h2:hover{
-     
-    text-shadow: #A7F2EB 2px 1px ;
+  }
 }
 
-.How{
-    display: grid;
-    padding: 25px;
-    border:20px;
-    h2{
-        text-align: center;
-        color: #101C26;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: $sz-lg;
-        text-shadow: $crudo 2px 4px ;
-    }
-    p{
-        text-align: center;
-        color: #101C26; 
-        font-size: $sz-md;
-        font-weight: bold; 
-        text-transform: uppercase;
-        
-    }  
+.What {
+  display: grid;
+  padding: 25px;
+
+  h2 {
+    text-align: center;
+    color: $negro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: $sz-lg;
+    text-shadow: 2px 4px $crudo;
+  }
+
+  p {
+    text-align: center;
+    color: $negro;
+    font-size: $sz-md;
+    font-weight: bold;
+  }
 }
-h2:hover{
-    text-shadow: #A7F2EB 2px 1px ;
-}
-      
+
+
+.How {
+  display: grid;
+  padding: 25px;
+
+  h2 {
+    text-align: center;
+    color: $negro;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: $sz-lg;
+    text-shadow: 2px 4px $crudo;
+  }
+  
+  p {
+    text-align: center;
+    color:$negro ;
+    font-size: $sz-md;
+    font-weight: bold;
     
-.Adv{
-    display: grid;
-    place-items: center;
-    padding: 35px;
-    border:20px;
+  }
 
-    
-    h2{
-        text-align: center;
-        color: #101C26;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: $sz-lg;
-        text-shadow: $crudo 2px 4px ;
-    }  
-    
-        ol{
-        color: #101C26; 
-        font-size: $sz-md;
-        font-weight: bold; 
-        text-transform: uppercase;
-        
-        }
-            li{
-                text-decoration: none;
-            }
-}
-h2:hover{
-    text-shadow: #A7F2EB 2px 1px ;
-}
-
-.foot{
-    background-color: #101C26;
-    height: 120px;
-    .Instagram{
-        width: 70px;
-        padding: 10px;
-        padding-top: 20px;
-    }
-    p{
-        color: #F2F2F2;
-        display: grid;
-        place-items: center;
-        text-transform: uppercase;
-        font-weight: bolder;
+.row {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+      padding: 25px; 
     }
 
-    
+
+
+.foot {
+background-color: #101C26;
+height: 120px;
+.Instagram {
+  width: 70px;
+  padding: 10px;
+  padding-top: 20px;
 }
 
-a{
-    display: flex;    
-    justify-content: end;
-    
+p {
+  color: #F2F2F2;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
 }
 
-// ABOUT CODE //
-
-.videoYT{
-    display: grid;
-    place-items:center;
-    padding-top: 95px;
-    padding-bottom: 95px;
+a {
+display: flex;
+justify-content: end;
 }
 
-h2{
-    text-align: center;
-            color: #101C26;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: $sz-lg;
-            text-shadow: $crudo 2px 4px ;
-            padding-bottom: 45px;
-}
-
-.textAbout{
-    text-align: center;
-        color: #101C26; 
-        font-size: $sz-md;
-        font-weight:unset; 
-        text-transform: uppercase;
-        padding: 65px;
-}
-
-// BEST JOBS CODE //
-
-.tema1 {
-    padding: 45px;
-    padding-top: 95px;
-                
-}
-
-.tema2 {
-    padding: 45px;
-}
-    
-.descripcion{
-    text-align: center;
-        color: #101C26; 
-        font-size: $sz-md;
-        font-weight: bold; 
-        text-transform: uppercase;
-        padding-top: 25px;
-}
-
-//  CODE CONTACTO  // 
-
-.formulario {
-    padding: 150px;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    display: grid;
-    place-items: center;
-
-        legend{
-            text-align: center;
-            font-weight: bold;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: $sz-lg;
-        }
-        label{
-            text-align: left;
-            font-weight: 700;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: $sz-md;
-        }
-        input{
-            border-radius: 10px;
-            border-color: #F2C894;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: normal;
-            padding: 5px;
-            
-        }
-        button{
-            border-radius: 3px;
-            border-color: #F2C894;
-            width: 90px;
-            color: $negro;
-            background-color: $amarillo;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-}
-
-//  FAQ CODE // 
-
-.pregunta{
-            text-align: left;
-            color: #101C26;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: $sz-lg;
-            text-shadow: $crudo 2px 4px ;
-            padding-bottom: 2px;
-            text-transform: uppercase;
-            padding-top: 95px;
-            padding-left: 45px;
-            font-size: $sz-md;
-}
-
-.rta{
-    text-align: left;
-    color: #101C26; 
-    font-size: $sz-sm;
-    font-weight: lighter;
-    text-transform: uppercase;
-    padding-left: 25px;
-    
-}
+@import url(./_about.scss);
+@import url(./_bestjobs.scss);
+@import url(./_contact.scss);
+@import url(./_faq.scss);

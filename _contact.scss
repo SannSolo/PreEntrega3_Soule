@@ -1,0 +1,43 @@
+.formulario {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 100;
+    display: grid;
+    place-items: center;
+    
+    legend {
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: $sz-md;
+    }
+    
+    label {
+      text-align: left;
+      font-family: 'Franklin Gothic Medium', 
+      'Arial Narrow', Arial, sans-serif;
+      font-size: $sz-md;
+      }
+    
+      input {
+          
+          border-radius: 10px;
+          border-color: #F2C894;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-weight: normal;
+          padding: 5px;
+      }
+      
+    
+    button {
+      border-radius: 3px;
+      border-color: #F2C894;
+      width: 90px;
+      color: $negro;
+      background-color: $amarillo;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    }

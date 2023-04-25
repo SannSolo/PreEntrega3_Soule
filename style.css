@@ -1,23 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&family=Tilt+Neon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Tilt Neon', cursive; */
 .navbar {
-  position: fixed;
+  
+  top: 0;
+  left: 0;
   background-color: #101C26;
   border-radius: 16px;
+  border: 15px solid #A7F2EB;
   font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
+
+.navbar .menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar .menu-item {
+  text-decoration: none;
+  color: #A7F2EB;
+  font-size: 18px;
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media screen and (max-width: 768px) {
+  .navbar .menu-item {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar .menu {
+    gap: 10px;
+  }
+
+  .navbar .menu-item {
+    font-size: 14px;
+  }
+}
+
+
 
 .LogoNav {
   width: 120px;
-  border-radius: 8px;
   border-radius: 25px;
 }
 
@@ -38,7 +79,7 @@ font-family: 'Tilt Neon', cursive; */
 }
 
 .logoGrande {
-  height: 250 px;
+  height: 250px;
 }
 
 .textInicio {
@@ -60,23 +101,39 @@ font-family: 'Tilt Neon', cursive; */
   font-size: 55px;
   text-shadow: #F2F2F2 2px 4px;
 }
-.What p {
-  text-align: center;
-  color: #101C26;
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
+.responsive-text {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
 }
 
-h2:hover {
-  text-shadow: #A7F2EB 2px 1px;
+.responsive-text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.How {
-  display: grid;
-  padding: 25px;
-  border: 20px;
+@media screen and (max-width: 768px) {
+  .responsive-text {
+    font-size:35px;
+    text-transform: uppercase;
+  }
+  .responsive-text h3 {
+    font-size: 35px;  
+    text-transform: uppercase;
+
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .responsive-text {
+    font-size: 14px;
+  }
+  .responsive-text h3 {
+    font-size: 20px;
+  }
+}
+
 .How h2 {
   text-align: center;
   color: #101C26;
@@ -92,40 +149,65 @@ h2:hover {
   text-transform: uppercase;
 }
 
-h2:hover {
-  text-shadow: #A7F2EB 2px 1px;
-}
 
 .Adv {
   display: grid;
-  place-items: center;
-  padding: 35px;
-  border: 20px;
+  place-items: start;
+  padding: 45px;
+  margin: 50px;
 }
 .Adv h2 {
   text-align: center;
   color: #101C26;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 55px;
+  font-size: 20px;
   text-shadow: #F2F2F2 2px 4px;
+
 }
 .Adv ol {
   color: #101C26;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 20px;
   text-transform: uppercase;
+  padding: 20px;
 }
 .Adv li {
   text-decoration: none;
 }
+/* Estilos para pantallas medianas (tablets) */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+  .Adv ol {
+    font-size: 30px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 30px;
+  }
+  .Adv ol {
+    font-size: 30px;
+  }
+}
+
 
 h2:hover {
   text-shadow: #A7F2EB 2px 1px;
 }
 
+.carrousel-item {
+  padding: 50px;
+  margin: 150px;
+  align-items: center;
+}
+
 .foot {
   background-color: #101C26;
-  height: 120px;
+  height:
+  120px;
 }
 .foot .Instagram {
   width: 70px;
@@ -189,7 +271,8 @@ h2 {
 }
 
 .formulario {
-  padding: 150px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   margin-bottom: 50px;
   text-transform: uppercase;
   display: grid;
@@ -245,4 +328,17 @@ h2 {
   font-weight: lighter;
   text-transform: uppercase;
   padding-left: 25px;
-}/*# sourceMappingURL=style.css.map */
+}
+/* Estilos para pantallas medianas (tablets) */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+/* Estilos para pantallas pequeñas (teléfonos móviles) */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,24 @@
+.videoYT {
+    display: grid;
+    place-items: center;
+    padding-top: 95px;
+    padding-bottom: 95px;
+    }
+    
+    h2 {
+    text-align: center;
+    color: #101C26;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: $sz-lg;
+    text-shadow: $crudo 2px 4px;
+    padding-bottom: 45px;
+    }
+    
+    .textAbout {
+    text-align: center;
+    color: #101C26;
+    font-size: $sz-md;
+    font-weight: unset;
+    text-transform: uppercase;
+    padding: 65px;
+    }
