@@ -26,15 +26,19 @@ $desktop: 1024px;
 
 // MEDIA QUERIES //
 @mixin respond-to($breakpoint) {
-  @if $breakpoint == mobile {
+  @if $breakpoint ==mobile {
     @media (max-width: #{$mobile}) {
       @content;
     }
-  } @else if $breakpoint == tablet {
+  }
+
+  @else if $breakpoint ==tablet {
     @media (max-width: #{$tablet}) {
       @content;
     }
-  } @else if $breakpoint == desktop {
+  }
+
+  @else if $breakpoint ==desktop {
     @media (max-width: #{$desktop}) {
       @content;
     }
@@ -85,7 +89,7 @@ img {
 
   @include respond-to(mobile) {
     grid-template-columns: 1fr;
-    
+
   }
 }
 
@@ -121,48 +125,49 @@ img {
     font-size: $sz-lg;
     text-shadow: 2px 4px $crudo;
   }
-  
+
   p {
     text-align: center;
-    color:$negro ;
+    color: $negro ;
     font-size: $sz-md;
     font-weight: bold;
-    
+
   }
 
-.row {
-      display: flex;
-      justify-content: space-between;
-      margin: 10px;
-      padding: 25px; 
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 25px;
+  }
+
+
+
+  .foot {
+    background-color: #101C26;
+    height: 120px;
+
+    .Instagram {
+      width: 70px;
+      padding: 10px;
+      padding-top: 20px;
     }
 
+    p {
+      color: #F2F2F2;
+      display: grid;
+      place-items: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+  }
 
+  a {
+    display: flex;
+    justify-content: end;
+  }
 
-.foot {
-background-color: #101C26;
-height: 120px;
-.Instagram {
-  width: 70px;
-  padding: 10px;
-  padding-top: 20px;
-}
-
-p {
-  color: #F2F2F2;
-  display: grid;
-  place-items: center;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-}
-
-a {
-display: flex;
-justify-content: end;
-}
-
-@import url(./_about.scss);
-@import url(./_bestjobs.scss);
-@import url(./_contact.scss);
-@import url(./_faq.scss);
+  @import url(./_about.scss);
+  @import url(./_bestjobs.scss);
+  @import url(./_contact.scss);
+  @import url(./_faq.scss);
