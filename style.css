@@ -1,61 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300&family=Tilt+Neon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .navbar {
-  
-  top: 0;
-  left: 0;
-  background-color: #101C26;
-  border-radius: 16px;
-  border: 15px solid #A7F2EB;
+  border-radius: 8px;
+  border: 5px solid #A7F2EB;
   font-weight: bold;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
 }
-
-.navbar .menu {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.navbar .menu-item {
-  text-decoration: none;
-  color: #A7F2EB;
-  font-size: 18px;
-}
-
-/* Estilos para pantallas medianas (tablets) */
-@media screen and (max-width: 768px) {
-  .navbar .menu-item {
-    font-size: 16px;
-  }
-}
-
-/* Estilos para pantallas pequeñas (teléfonos móviles) */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .navbar .menu {
-    gap: 10px;
-  }
-
-  .navbar .menu-item {
-    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0;
   }
 }
-
-
 
 .LogoNav {
   width: 120px;
@@ -68,16 +36,6 @@
   padding: 85px;
 }
 
-.imgUp {
-  display: grid;
-  place-items: center;
-  margin-top: 15px;
-}
-
-.imgUp:hover {
-  filter: blur(1px);
-}
-
 .logoGrande {
   height: 250px;
 }
@@ -87,233 +45,81 @@
   grid-template-columns: 50% 50%;
   padding: 45px;
   margin: 50px;
+  text-transform: lowercase;
+}
+@media (max-width: 480px) {
+  .textInicio {
+    grid-template-columns: 1fr;
+  }
 }
 
 .What {
   display: grid;
   padding: 25px;
-  border: 20px;
 }
 .What h2 {
   text-align: center;
   color: #101C26;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 55px;
-  text-shadow: #F2F2F2 2px 4px;
+  text-shadow: 2px 4px #F2F2F2;
 }
-.responsive-text {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: auto;
-}
-
-.responsive-text h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.What p {
+  text-align: center;
+  color: #101C26;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
-  .responsive-text {
-    font-size:35px;
-    
-  }
-  .responsive-text h3 {
-    font-size: 35px;  
-  
-
-  }
+.How {
+  display: grid;
+  padding: 25px;
+  @import url(./_about.scss);
+  @import url(./_bestjobs.scss);
+  @import url(./_contact.scss);
+  @import url(./_faq.scss);
 }
-
-@media screen and (max-width: 480px) {
-  .responsive-text {
-    font-size: 14px;
-  }
-  .responsive-text h3 {
-    font-size: 20px;
-  }
-}
-
 .How h2 {
   text-align: center;
   color: #101C26;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 55px;
-  text-shadow: #F2F2F2 2px 4px;
+  text-shadow: 2px 4px #F2F2F2;
 }
 .How p {
   text-align: center;
   color: #101C26;
   font-size: 30px;
   font-weight: bold;
-  text-transform: uppercase;
 }
-
-
-.carousel-inner img {
+.How .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 25px;
+}
+.How .carousel-inner img {
   width: 100%;
   height: 100%;
 }
-
-.carrousel-item {
-  padding: 50px;
-  margin: 150px;
-  align-items: center;
-}
-
-.foot {
+.How .footer {
   background-color: #101C26;
-  height:
-  120px;
+  height: 120px;
 }
-.foot .Instagram {
+.How .footer img {
   width: 70px;
   padding: 10px;
   padding-top: 20px;
 }
-.foot p {
+.How .footer p {
   color: #F2F2F2;
-  display: grid;
-  place-items: center;
+  text-align: center;
   text-transform: uppercase;
-  font-weight: bolder;
-}
-
-a {
-  display: flex;
-  justify-content: end;
-}
-
-.videoYT {
-  display: grid;
-  place-items: center;
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
-
-h2 {
-  text-align: center;
-  color: #101C26;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 55px;
-  text-shadow: #F2F2F2 2px 4px;
-  padding-bottom: 45px;
-  padding-top: 30px;
-}
-
-.textAbout {
-  text-align: center;
-  color: #101C26;
-  font-size: 20px;
-  font-weight: unset;
-  padding: 65px;
-  border:120px;
-}
-
-.tema1 {
-  padding: 45px;
-  padding-top: 95px;
-}
-
-.tema2 {
-  padding: 45px;
-}
-
-.descripcion {
-  text-align: center;
-  color: #101C26;
-  font-size: 30px;
   font-weight: bold;
-  text-transform: uppercase;
-  padding-top: 25px;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 20px 0;
 }
-
-
-.formulario {
-  display: grid;
-  padding-top: 50px;
-  padding-bottom: 150px;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  place-items:left;  
-}
-  
-.custom-control {
-  text-align: start;
-  font-weight:normal;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
-  padding-left: 30px;
-  border-radius: 5px;
-  width: 300px;
-
-}
-
-.msj{
-  height: 70px;
-}
-
-.btn-contact{
-  color: #fff;
-  background-color: #101C26;
-  width: 120px;
-  text-align: center;
-  padding-top: 10PX;
-  margin-top:10px;
-  font-size: 20px;
-  font-weight:normal;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
-}
-
-.vlogvideo{
-  width:40%; 
-  height: 60%;
-  margin-left: 30%;
-
-
-}
-.go_vlog_title{
-  font-size: 35px;
-
-}
-
-
-.titulo_preg{
-  padding-top: 15px;
-}
-
-.btn-primary{
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: center;
-}
-.colapse{
-  padding-top: 5px;
-}
-.video_mic{
-  margin: 60px;
-}
-
-
-.rta {
-  text-align: left;
-  color: #101C26;
-  font-size: 20px;
-  font-weight: lighter;
-  text-transform: uppercase;
-  padding-left: 25px;
-}
-/* Estilos para pantallas medianas (tablets) */
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 40px;
-  }
-}
-
-/* Estilos para pantallas pequeñas (teléfonos móviles) */
-@media screen and (max-width: 480px) {
-  h2 {
-    font-size: 30px;
-  }
-}
+.How .footer a {
+  margin-left: auto;
+}/*# sourceMappingURL=style.css.map */
